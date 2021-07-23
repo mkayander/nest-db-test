@@ -11,6 +11,9 @@ export class User {
   @Column()
   lastName: string;
 
+  @Column({ nullable: true, default: "Unknown" })
+  middleName: string;
+
   @Column({ default: true })
   isActive: boolean;
 }
