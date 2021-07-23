@@ -1,8 +1,16 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
+import { Connection } from "typeorm";
 
 @Injectable()
 export class AppService {
+  constructor(private readonly connection: Connection) {
+  }
+
   getHello(): string {
-    return 'Hello World!';
+    console.log(this.connection.isConnected);
+    console.log(this.connection.name);
+    console.log(this.connection.entityMetadatas);
+
+    return "Hello World!";
   }
 }
