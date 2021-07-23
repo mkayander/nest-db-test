@@ -3,6 +3,7 @@ import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { UsersModule } from "./users/users.module";
+import { CarsModule } from "./cars/cars.module";
 import * as ormConfig from "../ormconfigMySql";
 
 @Module({
@@ -12,6 +13,7 @@ import * as ormConfig from "../ormconfigMySql";
       autoLoadEntities: true,
     }),
     UsersModule,
+    CarsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
