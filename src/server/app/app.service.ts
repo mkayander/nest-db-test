@@ -3,8 +3,7 @@ import { Connection } from "typeorm";
 
 @Injectable()
 export class AppService {
-  constructor(private readonly connection: Connection) {
-  }
+  constructor(private readonly connection: Connection) {}
 
   getHello(): string {
     console.log(this.connection.isConnected);

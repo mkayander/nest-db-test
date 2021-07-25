@@ -10,11 +10,11 @@ const config: ConnectionOptions = {
   username: process.env.MYSQL_DB_USER,
   password: process.env.MYSQL_DB_PWD,
   database: process.env.MYSQL_DB_NAME,
-  entities: ["dist/**/*.entity{.ts,.js}"],
-  migrations: ["dist/src/migrations/*.js"],
+  entities: ["dist/src/server/**/*.entity{.ts,.js}"],
+  migrations: ["dist/src/server/migrations/*.js"],
   synchronize: false,
   cli: {
-    migrationsDir: "src/migrations",
+    migrationsDir: "src/server/migrations",
   },
 };
 

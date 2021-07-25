@@ -2,9 +2,9 @@ import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { UsersModule } from "./users/users.module";
-import { CarsModule } from "./cars/cars.module";
-import * as ormConfig from "../ormconfigMySql";
+import { UsersModule } from "../users/users.module";
+import { CarsModule } from "../cars/cars.module";
+import * as ormConfig from "../../../ormconfigMySql";
 
 @Module({
   imports: [
