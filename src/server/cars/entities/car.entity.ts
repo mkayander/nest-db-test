@@ -1,4 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  ObjectID,
+  ObjectIdColumn,
+  PrimaryGeneratedColumn,
+} from "typeorm";
 
 export enum CarEngineType {
   gas,
@@ -9,8 +15,8 @@ export enum CarEngineType {
 
 @Entity()
 export class Car {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @ObjectIdColumn()
+  id: ObjectID;
 
   @Column()
   manufacturer: string;

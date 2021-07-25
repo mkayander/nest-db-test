@@ -4,7 +4,7 @@ import { AppService } from "./app.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { UsersModule } from "../users/users.module";
 import { CarsModule } from "../cars/cars.module";
-import * as ormConfig from "../../../ormconfigMySql";
+import * as ormConfig from "../../../ormconfigMongo";
 
 @Module({
   imports: [
