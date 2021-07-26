@@ -12,6 +12,7 @@ const config: ConnectionOptions = {
   entities: ["dist/src/server/**/*.entity{.ts,.js}"],
   migrations: ["dist/src/server/migrations/*{.ts,.js}"],
   synchronize: true,
+  logging: false,
   cli: {
     migrationsDir: "src/server/migrations",
   },
