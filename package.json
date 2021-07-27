@@ -26,12 +26,17 @@
     "schema:log": "yarn run typeorm schema:log"
   },
   "dependencies": {
+    "@admin-bro/express": "^3.1.0",
+    "@admin-bro/nestjs": "^1.1.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/typeorm": "^8.0.1",
+    "admin-bro": "^4.0.1",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
     "mongodb": "^3.6.10",
     "mysql2": "^2.2.5",
     "pg": "^8.6.0",
